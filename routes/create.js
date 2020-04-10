@@ -51,7 +51,7 @@ router.post('/', function(req, res, next) {
   // test if data is coming through
   // check for the last pokemon hero id
   // set a new dynamic id
-    let newId = Number(++Pokemon.Pokemon.length);
+    let newId = Number(++Pokemon.pokemon.length);
     console.log("Creating " + req.body.name + " on the new id of: " + newId);
 
   // make a post request to our database and update the id
@@ -73,4 +73,4 @@ router.post('/', function(req, res, next) {
     res.redirect('/');
 });
 
-module.exports = route;
+module.exports = router;

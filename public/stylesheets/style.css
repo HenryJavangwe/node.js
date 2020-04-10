@@ -19,3 +19,10 @@ body {
 img {
   width: 100%;
 }
+
+.addHero{
+  background-color: #00B7FF;
+  width: 200px;
+  padding: 5px;
+  border-radius: 22.5px;
+}
