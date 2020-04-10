@@ -6,3 +6,16 @@ body {
 a {
   color: #00B7FF;
 }
+
+h1 {
+  background-color: rgb(224, 131, 131);
+  color: white;
+}
+body {
+  padding-top: 15px;
+  background-color: #ccc;
+}
+
+img {
+  width: 100%;
+}

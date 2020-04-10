@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Hero APP | New
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-danger">
+            <div class="panel panel-heading text-center">
+                <h1>It's Hero Time.</h1>
+            </div>
+            <div class="panel-body" id="all">
+
+                <% if (message) { %>
+                    <div class="alert alert-success" role="alert">
+                        <%= message %>
+                    </div>
+                    <% } %>
+
+                    <form action="" method="POST">
+                      <div class="form-group">
+                        <label for="InputName"> Hero Pokemon's Name </label>
+                        <input type="text" name="name" id="InputName" placeholder="Enter Hero's Name" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="imageInputURL">Image URL</label>
+                        <input type="text" name="pokemonImage" id="InputImageURL" placeholder="link to Hero image" class="form-control">
+                      </div>
+                      <div>
+                        <button type="submit" class="btn btn-block btn-md">Add new Hero</button>
+                      </div>
+                    </form>
+                    <!-- <form method="POST">
+                        <div class="form-group">
+                            <label for="exampleInputName">Pokemon Name:</label>
+                            <input class="form-control" type="text" name="namePokemon" id="exampleInputName" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputImageURL">Image URL:</label>
+                            <input class="form-control" type="text" name="imagePokemon" id="exampleInputImageURL" placeholder="Enter image url">
+                        </div>
+                        <div>
+                            <button class="btn btn-primary" type="submit">Add Pokemon</button>
+                        </div>
+                    </form> -->
+
+            </div>
+            <div class="panel-footer text-center">
+                <p>All rights reserved 2020 | Nate.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('button').addEventListener('click', ()=> this.preventDefault());
+    </script>
+</body>
+
+</html>

@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
+
+<head>
+    <title>
+        Hero APP | New
+    </title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p> <%= message %></p>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-danger">
+            <div class="panel panel-heading text-center">
+                <h1>It's Hero Time.</h1>
+            </div>
+            <div class="panel-body" id="all">
+
+                <% if (message) { %>
+                    <div class="alert alert-success" role="alert">
+                        <%= message %>
+                    </div>
+                <% } %>
+
+                        <a href="/create">
+                            <div class="col-xs-6 col-md-2">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <img src="https://cdn2.iconfinder.com/data/icons/transparent-round-icons/512/add.png">
+                                    </div>
+                                    <div class="panel-footer">
+                                        New pokemon
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <% pokemon.pokemon.forEach(function(poke){ %>
+                            <a href="/view/<%-poke.id %>">
+                                <div class="col-xs-6 col-md-2">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <img src="<%-poke.image %>">
+                                        </div>
+                                        <div class="panel-footer">
+                                            <%-poke.name %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        <% }); %>
+            </div>
+            <div class="panel-footer text-center">
+                <p>All rights reserved 2020 | Nate.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
