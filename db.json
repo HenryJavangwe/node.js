@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Charizard",
-      "image": "https://cdn.bulbagarden.net/upload/7/7e/006Charizard.png"
+      "image": "https://i.pinimg.com/originals/e4/99/b4/e499b4f6dea3e06a078313ff01b17904.jpg"
     },
     {
       "id": "2",
@@ -19,6 +19,11 @@
       "id": "4",
       "name": "Mega Espeon",
       "image": "https://static.pokemonpets.com/images/monsters-images-300-300/10196-Shiny-Mega-Espeon.png"
+    },
+    {
+      "id": "5",
+      "name": "Charizard",
+      "image": "https://i.pinimg.com/originals/e4/99/b4/e499b4f6dea3e06a078313ff01b17904.jpg"
     }
   ]
 }

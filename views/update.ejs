@@ -15,21 +15,32 @@
     <div class="container">
         <div class="panel panel-danger">
             <div class="panel panel-heading text-center">
-                <h3 class="text-center">
+                <h2 class="text-center">
                     <%= poke.name %>
-                </h3>
+                </h2>
             </div>
             <div class="panel-body" id="all">
 
                 <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-sm-offset-4 ">
+                                <p>
+                                    <h4 class="text-danger">
+                                            Return to home and refresh to see the update
+                                    </h4>
+                                </p>
+                            </div>
                     <div class="col-xs-12 col-sm-4 col-sm-offset-4 ">
                         <img src="<%= poke.image %>" >
                     </div>
                     <div class="col-xs-12 col-sm-4 col-sm-offset-4">
                         <br>
-                        <a href="/update/<%= poke.id %>" class="btn btn-block btn-primary">Update</a>
-                        <br>
-                        <a href="/delete/<%= poke.id %>" class="btn btn-block btn-danger">Delete</a>
+                        <form method="post">
+                            <input class="text-center mb-2  " type="text" name="updateName" id="updateName" placeholder="Insert new name">
+                            <input class="text-center" disabled="true" type="text" name="updateImage" id="updateImage" placeholder="New image URL">
+                            
+                            <br>
+                            <button type="submit" class="btn btn-block btn-primary">Update</button>
+                        </form>
                         <br>
                         <a href="/" class="btn btn-block btn-outline-primary">Home</a>
                     </div>

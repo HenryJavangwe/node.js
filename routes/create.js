@@ -1,41 +1,7 @@
-// var express = require('express');
-// var router = express.Router();
-// var Pokemon = require('../db.json');
-// var request = require('request');
-
-// router.get('/', function(req, res, next) {
-//     res.render('create', {message: false});
-//   });
-
-// //   posting to our db
-// router.post('/', function(req, res, next){
-//     // test if data is there
-//     // set a new dynamic Id 
-
-//     var Id = Pokemon.Pokemon.length;
-//     request({
-//         url: 'http://localhost:3000/pokemon',
-//         method: 'POST',
-//         form: {
-//             Id:    Id,
-//             name:  req.body.name,
-//             Image: req.body.ImageUrl
-//         },
-//         function (err, res, body) {
-//             // res.render.apply('create', {message: 'success'});          
-//         }
-//     })
-// })
 var express = require('express');
 var router = express.Router();
 var Pokemon = require('../db.json');
 var request = require('request');
-var bodyParser = require('body-parser');
-
-// // get create page
-// router.get('/', function(req, res, next) {
-//   res.render('create', {message: false});
-// });
 
 // GET create page:
 router.get('/', function(req, res, next) {
