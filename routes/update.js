@@ -6,10 +6,9 @@ var request = require('request');
 router.get("/:pokeId", function(req, res, next){
     // res.send("Got a patch request from the user")
     request.get(
-        'http://localhost:3000/pokemon/' + req.params.pokeId, 
+        'http://localhost:3001/pokemon/' + req.params.pokeId, 
         function (error, response, body) {
             console.log('body:', body); // Print the HTML 
-            // res.render('views', {poke: JSON.parse(body)} );
             res.render('update', {message: false, poke: JSON.parse(body)})
         }
     );
@@ -17,11 +16,11 @@ router.get("/:pokeId", function(req, res, next){
 
 router.post('/:pokeId', function(req, res, next) {
     request({
-        url: 'http://localhost:3000/pokemon/' + req.params.pokeId,
+        url: 'http://localhost:3001/pokemon/' + req.params.pokeId,
         method: "PATCH",
         form: {
-            name: req.body.updateName
-            // image: req.body.updateImage
+            name: req.body.updateName,
+            image: req.body.updateImage
         }
     },
     function(error, response, body) {
@@ -31,7 +30,7 @@ router.post('/:pokeId', function(req, res, next) {
     }
     );
 
-    res.redirect('/views/' + req.params.pokeId);
+    res.redirect('/view/' + req.params.pokeId);
 });
 
 
