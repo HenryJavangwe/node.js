@@ -1,11 +1,6 @@
 {
   "pokemon": [
     {
-      "id": 1,
-      "name": "Charizard",
-      "image": "https://i.pinimg.com/originals/e4/99/b4/e499b4f6dea3e06a078313ff01b17904.jpg"
-    },
-    {
       "id": "2",
       "name": "Pikachu",
       "image": "https://i.pinimg.com/originals/cb/33/49/cb3349b86ca661ca61ae9a36d88d70d4.png"
