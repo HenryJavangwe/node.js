@@ -29,7 +29,7 @@ router.post('/:pokeId', function(req, res, next) {
     }
     );
 
-    res.redirect('/view/' + req.params.pokeId, {message: 'successfully deleted!'});
+    res.redirect('/view/' + req.params.pokeId, {message: 'successfully Updated!'});
 });
 
 

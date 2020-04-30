@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Register routers after middleware 
+// Register routers 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/view', viewsRouter);

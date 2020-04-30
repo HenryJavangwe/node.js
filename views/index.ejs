@@ -12,22 +12,22 @@
 
 <body>
     <div class="container">
-        <div class="panel panel-danger">
-            <div class="panel panel-heading text-center">
+        <div class="">
+            <div class=" panel-heading text-center">
                 <h1>It's Hero Time.</h1>
             </div>
             <div class="col-xs-12 col-sm-12 col-lg-12 col-sm-offset-4 ">
                 <p>
-                    <h5 class="text-danger">
-                        Get Rolling with <br>
-                        <span href="" style="color:  #4a90e2;" class="typewrite " data-period="3000" data-type='[ "Epic Battles", "Powerful Heroes", "Superb Graphics", "Awesome upgrades!", "High Item Drops!" ]'>
+                    <h4 style="color: white">
+                        Get Rolling with: <br>
+                        <span href="" style="color:  #ffbb00;" class="typewrite " data-period="3000" data-type='[ "Epic Battles", "Powerful Heroes", "Superb Graphics", "Awesome upgrades!", "High Item Drops!" ]'>
                             <span class="wrap">  
                             </span>
                         </span>
-                    </h5>
+                    </h4>
                 </p>
             </div>
-            <div class="panel-body" id="all">
+            <div class="panel-body body" id="all">
 
                 <% if (message) { %>
                     <div class="alert alert-success" role="alert">
@@ -38,9 +38,11 @@
                         <a href="/create">
                             <div class="col-xs-6 col-md-2">
                                 <div class="panel panel-default">
+                                    
                                     <div class="panel-body">
                                         <img src="https://cdn2.iconfinder.com/data/icons/transparent-round-icons/512/add.png">
                                     </div>
+
                                     <div class="panel-footer">
                                         New pokemon
                                     </div>
@@ -63,8 +65,8 @@
                             </a>
                         <% }); %>
             </div>
-            <div class="panel-footer text-center">
-                <p>All rights reserved 2020 | Nate.</p>
+            <div class="text-center bg-dark">
+                <p class="text-dark">All rights reserved 2020 | Nate.</p>
             </div>
         </div>
     </div>

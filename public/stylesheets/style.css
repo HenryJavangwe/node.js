@@ -1,24 +1,26 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(90, 83, 83);
+  color: #ffffff;
 }
 
 a {
   color: #00B7FF;
 }
-
+/* 
 h1 {
   background-color: rgb(224, 131, 131);
   color: white;
-}
-body {
+} */
+.body {
   padding-top: 15px;
-  background-color: #ccc;
+  background-color: rgb(126, 117, 117);
 }
 
 img {
   width: 100%;
-  height: 130px;
+  height: 140px;
 }
 
 .btn{
