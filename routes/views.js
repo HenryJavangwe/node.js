@@ -14,7 +14,7 @@ router.get('/:pokeId', function(req, res, next){
     //     res.render('view',{poke: JSON.parse(body)});
     // })
     request(
-        'http://localhost:3001/pokemon/' + req.params.pokeId,
+        'http://localhost:3000/pokemon/' + req.params.pokeId,
         "GET",
         function (error, response, body) {
             console.error('error:', error); // Print the error if one occurred
