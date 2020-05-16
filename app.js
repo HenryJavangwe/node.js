@@ -11,6 +11,7 @@ var viewsRouter = require('./routes/views');
 var createRouter = require('./routes/create');
 var updateRouter = require('./routes/update');
 var deleteRouter = require ('./routes/delete');
+var aboutRouter  =require('./routes/about');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use('/view', viewsRouter);
 app.use('/create', createRouter);
 app.use('/update', updateRouter);
 app.use('/delete', deleteRouter);
+app.use('/about', aboutRouter);
 // 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
