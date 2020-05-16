@@ -60,14 +60,14 @@
             
             <article class="row p-1 my-3" style="width: 100%; margin: 0;">
                 <% pokemon.pokemon.forEach(function(poke){ %>
-                    <a class="my-3 col-md-3 col-lg-3 col-sm-12 " href="/view/<%-poke.id %>" >
+                    <a class="my-3 col-md-3 col-lg-3 col-sm-12 " href="/view/<%=poke.id %>" >
                         <div class="card" style="height: 300px;" >
                             <div style="height: 85%;">
-                                <img style="height: 100%;" class="" src="<%-poke.image %>">
+                                <img style="height: 100%;"src="<%=poke.image %>">
                             </div>
                             <div class="">
                                 <h5 class="card-footer">
-                                    <%-poke.name %>
+                                    <%=poke.name %>
                                 </h5>
                             </div>
                         </div>
