@@ -5,9 +5,8 @@ var request = require('request');
 
 router.get('/:pokeId', function(req, res, next){
     // make post request TO OUR DATABASE
-    request(
+    request.get(
         'http://localhost:8080/pokemon/' + req.params.pokeId,
-        "GET",
         function (error, response, body) {
             console.error('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
