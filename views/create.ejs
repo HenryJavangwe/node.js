@@ -2,13 +2,30 @@
 <html>
 <head>
     <title>
-        Hero APP | New
+        Hero APP | Create
     </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header class="header bg-dark mb-4 p-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/">Ultra Pokemon Hero</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#"> Get In Touch </a>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
     <div class="container">
         <div class="panel panel-danger">
             <div class="panel panel-heading text-center">
@@ -32,17 +49,17 @@
                         <input type="text" name="pokemonImage" id="InputImageURL" placeholder="link to Hero image" class="form-control">
                       </div>
                       <div>
-                        <button type="submit" class="btn btn-block  addHero ">Add new Hero</button>
+                        <button type="submit" class="btn btn-warning  addHero ">Add new Hero</button>
                       </div>
-                      <a href="/" class="mt-3 bg-warning btn btn-warning">cancel</a>
+                      <a href="/" class="mt-3 btn btn-danger">cancel</a>
                     </form>
 
             </div>
-            <div class="panel-footer text-center">
-                <p>All rights reserved 2020 | Nate.</p>
-            </div>
         </div>
     </div>
+    <footer class="text-center">
+        <p>All rights reserved 2020 | Henry.</p>
+    </footer>
     <script>
         document.querySelector('button').addEventListener('click', ()=> this.preventDefault());
     </script>
