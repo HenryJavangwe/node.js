@@ -1,135 +1,149 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>
-        Hero APP | New
-    </title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <div class="container">
-        <div class="">
-            <div class=" panel-heading text-center">
-                <h1>It's Hero Time.</h1>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Hero APP | New
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel='stylesheet' href='/stylesheets/style.css'/>
+    </head>
+    <body >
+        <header class="header bg-dark m-0 p-3">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Ultra Pokemon Hero</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item nav-link" href="#"> Get In Touch </a>
+                      </div>
+                    </div>
+                </nav>
             </div>
-            <div class="col-xs-12 col-sm-12 col-lg-12 col-sm-offset-4 ">
-                <p>
-                    <h4 style="color: white">
-                        Get Rolling with: <br>
-                        <span href="" style="color:  #ffbb00;" class="typewrite " data-period="3000" data-type='[ "Epic Battles", "Powerful Heroes", "Superb Graphics", "Awesome upgrades!", "High Item Drops!" ]'>
-                            <span class="wrap">  
+        </header>
+        <main  class="m-0 >
+            <article class="container">
+                <div class="text-center col-xs-12 col-sm-12 col-lg-12 col-sm-offset-4 ">
+                    <p>
+                        <h1 class="text-dark">
+                            Get Rolling with: <br>
+                            <span href="" style="color:  #ffbb00;" class="typewrite " data-period="3000" data-type='[ "Epic Battles", "Powerful Heroes", "Superb Graphics", "Awesome upgrades!", "High Item Drops!" ]'>
+                                <span class="wrap">  
+                                </span>
                             </span>
-                        </span>
-                    </h4>
-                </p>
-            </div>
-            <div class="panel-body body" id="all">
-
+                        </h1>
+                    </p>
+                </div>
+                <div class="container create">
+                    <a href="/create">
+                        <div class="col-xs-6 col-md-2">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="50" height="50"
+                                viewBox="0 0 171 171"
+                                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99219v-171.99219h171.99219v171.99219z" fill="none"></path><g fill="#4f525f"><path d="M85.5,8.01563c-42.79275,0 -77.48437,34.69163 -77.48437,77.48438c0,42.79275 34.69163,77.48438 77.48438,77.48438c42.79275,0 77.48438,-34.69163 77.48438,-77.48437c0,-42.79275 -34.69163,-77.48437 -77.48437,-77.48437zM85.5,13.35938c39.843,0 72.14063,32.29763 72.14063,72.14063c0,39.843 -32.29762,72.14063 -72.14062,72.14063c-39.843,0 -72.14062,-32.29762 -72.14062,-72.14062c0,-39.843 32.29763,-72.14062 72.14063,-72.14062zM85.92792,23.96338c-29.83924,-0.28581 -56.23132,21.24124 -61.16611,51.60059c-3.17953,19.55011 3.25877,39.43228 17.29413,53.40619c1.11952,0.9592 2.80856,0.82728 3.76776,-0.29224c0.85767,-0.99928 0.85767,-2.47624 0,-3.47552c-21.92006,-21.90403 -21.93267,-57.42732 -0.03131,-79.34738l0.03131,-0.03131c12.7582,-12.70477 30.81862,-18.54511 48.59994,-15.71292c1.47487,0.23513 2.86467,-0.76908 3.09979,-2.24396c0.23512,-1.47488 -0.76908,-2.86467 -2.24396,-3.09979c-3.14062,-0.51075 -6.26475,-0.77408 -9.35156,-0.80365zM105.9722,27.69461c-1.04128,-0.01603 -2.04235,0.57967 -2.48923,1.59165c-0.59583,1.3493 0.01795,2.92666 1.36725,3.52249c0.09618,0.04008 0.19083,0.0802 0.28702,0.10959c1.91306,0.71607 3.785,1.53612 5.6099,2.45792c1.31991,0.6653 2.93025,0.13009 3.59555,-1.18982c0.6653,-1.31991 0.13009,-2.93025 -1.18982,-3.59555c-1.99856,-1.00195 -4.04743,-1.89436 -6.14218,-2.67187c-0.33732,-0.14896 -0.69139,-0.21905 -1.03848,-0.2244zM122.37918,36.68088c-1.02249,-0.19613 -2.10886,0.21784 -2.72406,1.13763c-0.73477,1.09814 -0.55775,2.57014 0.41748,3.45987c1.79016,1.41075 3.49523,2.93151 5.1037,4.54532c21.91205,21.91205 21.91459,57.43533 0.00522,79.34738l-0.00522,0.00522c-1.11952,0.9592 -1.25144,2.64825 -0.29224,3.76776c0.9592,1.11952 2.64825,1.25144 3.76776,0.29224c0.1042,-0.09084 0.20406,-0.18803 0.29224,-0.29224c23.98542,-23.99611 23.98542,-62.89202 0,-86.88812c-1.76077,-1.76611 -3.62532,-3.42635 -5.5838,-4.96802c-0.3066,-0.20507 -0.64025,-0.34167 -0.98108,-0.40704zM85.5,56.10938c-1.47487,0 -2.67187,1.197 -2.67187,2.67188v24.04688h-24.04687c-1.47487,0 -2.67187,1.197 -2.67187,2.67188c0,1.47487 1.197,2.67188 2.67188,2.67188h24.04688v24.04688c0,1.47487 1.197,2.67188 2.67188,2.67188c1.47487,0 2.67188,-1.197 2.67188,-2.67187v-24.04687h24.04688c1.47487,0 2.67188,-1.197 2.67188,-2.67187c0,-1.47487 -1.197,-2.67187 -2.67187,-2.67187h-24.04687v-24.04687c0,-1.47487 -1.197,-2.67187 -2.67187,-2.67187zM111.28986,129.19977c-0.34609,0.02818 -0.69552,0.12645 -1.02283,0.29745c-1.30922,0.684 -1.8112,2.29677 -1.1272,3.60599c0.03473,0.0668 0.06951,0.13418 0.10959,0.1983l2.67188,4.61838c0.684,1.30655 2.29677,1.81642 3.60599,1.13242c1.30922,-0.684 1.81642,-2.29677 1.13242,-3.60599c-0.03473,-0.0668 -0.07473,-0.13418 -0.11481,-0.1983l-2.67187,-4.61838c-0.513,-0.97991 -1.54489,-1.51441 -2.58316,-1.42987zM59.77798,129.29892c-1.03339,-0.12988 -2.0907,0.3572 -2.64578,1.31506l-0.00522,0.01565l-2.67187,4.61838c-0.79087,1.24509 -0.42579,2.89861 0.81931,3.68948c1.24509,0.79087 2.89339,0.42579 3.68426,-0.81931c0.04008,-0.06413 0.08007,-0.1315 0.11481,-0.1983l2.67188,-4.61838c0.74545,-1.27181 0.31683,-2.91272 -0.95499,-3.65817l-0.00522,-0.00522c-0.31929,-0.18503 -0.66271,-0.29591 -1.00717,-0.3392zM71.64487,134.52264c-1.02813,0.14779 -1.91766,0.89086 -2.20221,1.95694l-1.38812,5.12979c-0.43284,1.41075 0.35833,2.90178 1.76907,3.33463c1.41075,0.43284 2.907,-0.35832 3.33984,-1.76907c0.01871,-0.05878 0.03361,-0.11865 0.04697,-0.17743l1.38812,-5.15588c0.37406,-1.42411 -0.47288,-2.88216 -1.89432,-3.26157c-0.35603,-0.09352 -0.71665,-0.10667 -1.05936,-0.05741zM99.25076,134.60614c-0.34517,-0.03557 -0.70145,-0.00384 -1.05414,0.10437c-1.34395,0.41147 -2.13921,1.78919 -1.82126,3.15719l1.38812,5.15589c0.39009,1.43213 1.86597,2.27397 3.2981,1.88388c1.43212,-0.39009 2.27397,-1.86597 1.88388,-3.2981l-1.41422,-5.12979c-0.32463,-1.05806 -1.24497,-1.76673 -2.28049,-1.87344zM85.5,136.26563c-1.47487,0 -2.67187,1.197 -2.67187,2.67188v5.34375c0,1.47487 1.197,2.67188 2.67188,2.67188c1.47487,0 2.67188,-1.197 2.67188,-2.67187v-5.34375c0,-1.47487 -1.197,-2.67187 -2.67187,-2.67187z"></path></g></g>
+                                </svg>
+                            </span>
+                            <span class="text-warning">
+                                New Pokemon
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </article>
+            
+            <article class="row p-1 my-3" style="width: 100%; margin: 0;">
+                <% pokemon.pokemon.forEach(function(poke){ %>
+                    <a class="my-3 col-md-3 col-lg-3 col-sm-12 " href="/view/<%-poke.id %>" >
+                        <div class="card" style="height: 300px;" >
+                            <div style="height: 85%;">
+                                <img style="height: 100%;" class="" src="<%-poke.image %>">
+                            </div>
+                            <div class="">
+                                <h5 class="card-footer">
+                                    <%-poke.name %>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                <% }); %>
+            </article>
+            <article class="container">
                 <% if (message) { %>
                     <div class="alert alert-success" role="alert">
                         <%= message %>
                     </div>
                 <% } %>
-                        <a href="/create">
-                            <div class="col-xs-6 col-md-2">
-                                <div class="panel panel-default">
-                                    
-                                    <div class="panel-body">
-                                        <img src="https://cdn2.iconfinder.com/data/icons/transparent-round-icons/512/add.png">
-                                    </div>
-
-                                    <div class="panel-footer">
-                                        New pokemon
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <% pokemon.pokemon.forEach(function(poke){ %>
-                            <a href="/view/<%-poke.id %>">
-                                <div class="col-xs-6 col-md-2">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <img src="<%-poke.image %>">
-                                        </div>
-                                        <div class="panel-footer">
-                                            <%-poke.name %>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        <% }); %>
-            </div>
-            <div class="text-center bg-dark">
-                <p class="text-dark">All rights reserved 2020 | Nate.</p>
-            </div>
-        </div>
-    </div>
-    <script >
-        // TYPEWRITER EFFECT SCRIPTS.
-
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-    }
-
-    setTimeout(function() {
-    that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS Dynamically ""
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; border-color:  #4a90e2;}";
-    document.body.appendChild(css);
-    
-};
-    </script>
-</body>
-
+            </article>
+        </main>
+        <!-- ---scripts --- -->
+        <script >
+            // TYPEWRITER EFFECT SCRIPTS.
+            var TxtType = function(el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+            };
+            TxtType.prototype.tick = function() {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+            
+                if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+            
+                this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+            
+                var that = this;
+                var delta = 200 - Math.random() * 100;
+            
+                if (this.isDeleting) { delta /= 2; }
+            
+                if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+                }
+            
+                setTimeout(function() {
+                that.tick();
+                }, delta);
+            };
+        
+            window.onload = function() {
+                var elements = document.getElementsByClassName('typewrite');
+                for (var i=0; i<elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-type');
+                    var period = elements[i].getAttribute('data-period');
+                    if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                    }
+                }
+                // INJECT CSS Dynamically ""
+                var css = document.createElement("style");
+                css.type = "text/css";
+                css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; border-color: orange;}";
+                document.body.appendChild(css);
+            };
+        </script>
+        <!-- ----Scripts---- -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
 </html>

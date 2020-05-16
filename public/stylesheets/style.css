@@ -1,31 +1,16 @@
+/* main styles */
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(90, 83, 83);
   color: #ffffff;
+  background-color: rgba(87, 97, 90, 0.712);
+  background-repeat: no-repeat;
 }
 
-a {
-  color: #00B7FF;
-}
-/* 
-h1 {
-  background-color: rgb(224, 131, 131);
-  color: white;
-} */
-.body {
-  padding-top: 15px;
-  background-color: rgb(126, 117, 117);
-}
+/* article styles */
+.create {
 
+}
 img {
   width: 100%;
   height: 140px;
-}
-
-.btn{
-  background-color: #00B7FF;
-  width: 200px;
-  padding: 5px;
-  border-radius: 22.5px;
 }

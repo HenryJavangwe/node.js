@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -48,4 +48,100 @@
 
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero|App</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header bg-dark mb-4 p-3">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Ultra Pokemon Hero</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item nav-link" href="#"> Get In Touch </a>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article class="container">
+                <section>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">
+                                <%= poke.name %>
+                            </h3>
+                            <hr>
+                            <div class="container text-center col-xs-12 col-sm-4 col-lg-12 ">
+                                <img class="img-fluid" src="<%= poke.image %>" >
+                            </div>
+                            <hr>
+                            <div class="card-text">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">HP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" id="skill-tab" data-toggle="tab" href="#skill" role="tab" aria-controls="skill" aria-selected="false">Skill</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" id="Defence-tab" data-toggle="tab" href="#Defence" role="tab" aria-controls="Defence" aria-selected="false">Defence</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active p-4" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        Your HP is indicated by the blue bar on the top left corner of your screen inside the game. Health is measured in hit points or health points, hence, HP <br>
+                                        If your HP reaches Zero, you'll die, so make sure to use HP portions and avoid taking unnecessary risks.
+                                    </div>
+                                    <div class="tab-pane fade p-4" id="skill" role="tabpanel" aria-labelledby="skill-tab">
+                                        As you play along the game you'll get stronger and acquire new and powerful skills. To be able to use the newly acquired skills, you must first be in the Floating village or any safe Re-spawning area. Visit your inventory and under the skills section, equip the skill in your empty skill slots.
+                                        <br> 
+                                        If your slots are all full, to equip new you must first remove an old skill and then equip a new one on the free slot.
+                                        <p>
+                                            Pay attention to the skills you're equipping. Skills work in different ways and so are their effectiveness against different enemies. The hierarchy is as follows and the fire skill is superior to the wind.
+                                            Skills: Wind, Lightning, Earth, Water, Fire. 
+                                        </p> 
+                                    </div>
+                                    <div class="tab-pane fade p-4" id="Defence" role="tabpanel" aria-labelledby="Defence-tab">
+                                        A good offense is a strong Defence, as some say. Make sure that your defence skills and gear are top class. You can Upgrade your gear in the blacksmith shop in the village.
+                                        A strong defence will reduce the damage taken and you'll stand a far better chance to defeat strong enemies.  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container text-center col-lg-12 col-xs-12 col-sm-4">
+                                <form method="post">
+                                    <input class="text-center mb-2  " type="text" name="updateName" id="updateName" placeholder="Insert new name">
+                                    <input class="text-center"  type="text" name="updateImage" id="updateImage" placeholder="New image URL">
+                                    <br>
+                                    <button type="submit" class="btn btn-primary">Update</button>
+                                </form>
+                            </div>
+                            <div class="container text-center col-lg-12 col-xs-12 col-sm-4">
+                                <a href="/delete/<%= poke.id %>" >
+                                <button class="delete my-1 bg-danger btn"> Delete</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <!-- ----Scripts---- -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
 </html>

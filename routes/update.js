@@ -29,8 +29,6 @@ router.post('/:pokeId', function(req, res, next) {
     }
     );
 
-    res.redirect('/view/' + req.params.pokeId, {message: 'successfully Updated!'});
+    res.redirect('/');
 });
-
-
 module.exports = router;
