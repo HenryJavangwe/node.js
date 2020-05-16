@@ -5,7 +5,7 @@ var request = require('request');
 router.get("/:pokeId", function(req, res, next){
     // res.send("Got a patch request from the user")
     request.get(
-        'http://localhost:3001/pokemon/' + req.params.pokeId, 
+        'http://localhost:8080/pokemon/' + req.params.pokeId, 
         function (error, response, body) {
             console.log('body:', body); // Print the HTML 
             res.render('update', {message: false, poke: JSON.parse(body)})
@@ -15,7 +15,7 @@ router.get("/:pokeId", function(req, res, next){
 
 router.post('/:pokeId', function(req, res, next) {
     request({
-        url: 'http://localhost:3001/pokemon/' + req.params.pokeId,
+        url: 'http://localhost:8080/pokemon/' + req.params.pokeId,
         method: "PATCH",
         form: {
             name: req.body.updateName,

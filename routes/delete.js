@@ -25,7 +25,7 @@ router.get('/:pokeId', function(req, res, next){
 
 router.post('/:pokeId', function(req, res, next){
     request({
-        url: 'http://localhost:3001/pokemon/' + req.params.pokeId,
+        url: 'http://localhost:8080/pokemon/' + req.params.pokeId,
         method: 'DELETE'        
     },
     function(error, response, body){

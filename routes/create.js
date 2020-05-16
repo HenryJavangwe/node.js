@@ -22,7 +22,7 @@ router.post('/', function(req, res, next) {
 
   // make a post request to our database and update the id
   request({
-    url: "http://localhost:3001/pokemon",
+    url: "http://localhost:8080/pokemon",
     method: "POST",
     form: {
       id: Number(newId),
