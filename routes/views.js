@@ -4,7 +4,7 @@ var Pokemon = require('../db.json');
 var request = require('request');
 
 router.get('/:pokeId', function(req, res, next){
-    // make post request TO OUR DATABASE
+    
     request.get(
         'http://localhost:8080/pokemon/' + req.params.pokeId,
         function (error, response, body) {
